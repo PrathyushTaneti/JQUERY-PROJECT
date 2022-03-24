@@ -1,0 +1,152 @@
+@import "variables";
+@import "mixins";
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    font-family:monospace;
+    color : $light-black-color;
+}
+
+a{
+    text-decoration: none;
+    color : $white-color;
+    font-weight: bold;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+/*********** font families ************/
+
+.font-jost{
+    font-family: 'Jost', sans-serif;
+}
+
+.font-noto{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.font-open{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+/*********** background ************/
+
+.bg-blue{
+    background: $blue-color;
+}
+
+.bg-orange{
+    background: $orange-color;
+}
+/*********** font size ************/
+
+.text-x-small{
+    font-size: 0.8rem;
+}
+
+.text-small{
+    font-size: 1.25rem;
+}
+
+.text-medium{
+    font-size: 1.4rem;
+}
+
+.text-large{
+    font-size: 4rem;
+}
+/*********** font color ************/
+
+.text-white{
+    color : $white-color;
+}
+
+.text-black{
+    color : $black-color;
+}
+
+.text-red{
+    color : $red-color;
+}
+/*********** font weight ************/
+
+.font-weight-550{
+    font-weight: 550;
+}
+/*********** line height ************/
+
+.line-height{
+    line-height: 1.55rem;
+}
+/*********** list style ************/
+
+.list-style-none{
+    list-style-type: none;
+}
+/*********** border ************/
+
+.border-left{
+    @include border-left(0.3rem, $white-color);
+}
+/*********** padding & margins ************/
+
+.pr-10{
+    padding-right: 5rem;
+}
+/*********** width ************/
+.w-13{
+    width : 13rem;
+}
+
+.w-16{
+    width : 16rem;
+}
+
+.w-55{
+    width : 55%;
+}
+
+/*********** classes ************/
+
+.hover:hover{
+    @extend .border-left;
+    background: $orange-color; 
+    text-decoration: none;
+    color : $black-color;
+}
+
+li:before{
+    content: '\2012';
+    position: absolute;
+    margin-left: -1%;
+}
+
+.para{
+    height: 8rem;
+    max-height: 15rem;
+    width: 27.5rem;  
+    overflow-y: scroll;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}

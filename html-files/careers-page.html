@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CAREERS </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style-sheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="container-fluid p-4 font-jost h1 bg-blue m-0 text-large text-white"> TECHNOVERT </div>    
+        <div class="container-fluid bg-dark d-flex justify-content-between py-0">
+            <div class="py-1">
+                <a href="../html-files/home-page.html" target="_blank" class="text-medium px-3 py-2 hover">HOME</a>
+                <a href="#" target="_blank" class="text-medium pl-2 pr-3 py-2 hover">SERVICES</a>
+                <a href="../html-files/careers-page.html" target="_blank" class="text-medium pl-2 pr-3 py-2 hover border-left bg-orange text-black">CAREERS</a>
+                <a href="../html-files/contact-page.html" target="_blank" class="text-medium px-2 py-2 hover">CONTACT</a>
+            </div>
+            <div class="py-2">
+                <img src="../components/blog-icon.png">
+            </div>
+        </div>
+
+        <div class="text-dark ml-5 mt-4">
+            <h3 class="font-poppins d-block mt-3 ml-3"> <b>Careers at Technovert</b> </h3>
+            <div class="font-jost text-small mt-3 ml-3">
+                We are looking for smart people who love fiddling with code and pour their heart into it. If you are one, we would like
+                to talk to you Please fill <br>the form below and we will get back to you.
+            </div>
+
+            <div class="container-fluid font-sans font-weight-bold d-flex mt-5">
+                <div class="pl-4 pr-5 font-roboto">
+                    <label class="pl-1 pt-1" >Name</label> <br>
+                    <label class="pl-1 pt-4 pb-2" >Email</label> <br>
+                    <label class="pl-1 pt-4 pb-2">Desired Role</label> <br>
+                    <label class="pl-1 pt-4" >Upload Resume</label>
+                </div>
+                <div class="pl-1">
+                    <input type="text" class="mb-4 py-1 w-13" id=""><br>
+                    <input type="text" class="mb-4 py-1 w-13" id=""><br>
+                    <input type="text" class="mb-4 py-1 w-13" id=""><br>
+                    <input type="text" id="file-name" class="mb-4 py-1 w-13">
+                    <input type="file" id="real-file" hidden="hidden" />
+                    <button class="border border-dark pl-3 pr-4 py-1 ml-2 font-weight-bold font-roboto" id="chooseFile"> Browse.. </button> <br>
+                    <button class="border border-dark pl-3 pr-10 mt-2 py-1 font-weight-bold font-roboto" id="submitFiles"> Submit </button>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../jquery-files/index.js"></script>
+</body>
+</html>
