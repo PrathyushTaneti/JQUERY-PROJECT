@@ -1,1 +1,3 @@
-# JQUERY-PROJECT
+# Mikaso Website With Jquery
+
+## Author : Prathyush Taneti
